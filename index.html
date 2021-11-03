@@ -14,315 +14,186 @@
 
 
 <body>
+	<div id="work"></div>
+	<div class="sticky" id="myHeader">
+		<h3><a href="#work">Sophia Mai Brown</a></h3>
 
-	<div class="info" style="float:left; font-size: 3vw">
-		<p style="text-align:left" ><br>sophia mai brown</p>
-	</div>
-
-	<div class="info" style="float:right; font-size: 2vw" >
-		<p style="text-align:right">(917) 566-7512 <br>
-		sbrown02@risd.edu <br>
-		<button style="font-size:1.9vw" onclick="location.href='https://www.instagram.com/energy.cow/'" type="button">
-         @energy.cow</button>
-	</div>
-
-<div style="font-size:1.5vw">
-	<table>
-		<tr>
-			<td>illustration</td>
-			<td>design</td>
-			<td>sketches</td>
-		</tr>
-	</table>
-	<table>
-		<tr>
-			<td><p id="caption1"></p></td>
-			<td><p id="caption2"></p></td>
-			<td><p id="caption3"></p></td>
-		</tr>
-		<tr>
-			<td><button style="font-size:1.2vw" onClick="window.onload = buttonUp(1)">⬆</button></td>
-			<td><button style="font-size:1.2vw" onClick="window.onload = buttonUp(2)">⬆</button></td>
-			<td><button style="font-size:1.2vw" onClick="window.onload = buttonUp(3)">⬆</button></td>
-		</tr>
-	</table>
-</div>
-
-<div class="row">
-  <div class="column" style="width:31%">
-		<div id='artTarget'>
-			<br>
+		<div class="dropdown">
+			<a href="#work">> work</a>
+		  <div class="dropdown-content">
+		    <a href="#bay mall">> bay mall</a>
+				<a href="#space bears">> space bears</a>
+		    <a href="#new york">> new york</a>
+		    <a href="#providence">> providence</a>
+				<a href="#nee ner noo">> nee ner noo</a>
+				<a href="#legs">> legs</a>
+				<a href="#pair">> pair</a>
+				<a href="#inferno">> inferno</a>
+				<a href="#whale">> whale</a>
+		  </div>
 		</div>
+
+		<p><a href="#about">> about</a></p>
+		<p><a href="#contact">> contact</a></p>
 	</div>
 
-<div class="separate">
-	<br>
-</div>
 
-<div class="column" style="width:30%">
-	<div id='designTarget'>
-		<br>
-	</div>
-</div>
 
-<div class="separate">
-	<br>
-</div>
 
-<div class="column" style="width:30%">
-	<div id='sketchTarget'>
-		<br>
-	</div>
-</div>
-</div>
+	<div id="bay mall" class="content">
 
-<div>
-	<br>
-	<table>
-		<tr>
-			<td><button style="font-size:1.2vw" onclick="buttonDown(1)">⬇</button></td>
-			<td><button style="font-size:1.2vw" onclick="buttonDown(2)">⬇</button></td>
-			<td><button style="font-size:1.2vw" onclick="buttonDown(3)">⬇</button></td>
-		</tr>
-	</table>
-</div>
+		<div>
+			<h3 id="center">bay mall</h3>
+			<p id="center">2021<br>24"x19"</p>
+			<table><tr><td>
+						<img src="web_art/bay_mall_lowres.png">
+					</td></tr></table>
+		</div>
+		<div id="bottom"></div>
 
-	<script>
+		<div id="space bears">
+			<p><br></p>
+			<h3 id="center">space bears<br>(let's go fly a kite)</h3>
+			<p id="center">2021<br>24"x19"</p>
+			<table>
+				<tr>
+					<td><img src="web_art/space_bears_kite1.jpg"></td>
+					<td><img src="web_art/space_bears_kite2.jpg"></td>
+					<td><img src="web_art/space_bears_kite3.jpg"></td>
+				</tr>
+				<tr>
+					<td><img src="web_art/space_bears_detail1.jpg"></td>
+					<td><img src="web_art/space_bears_detail2.jpg"></td>
+					<td><img src="web_art/space_bears_detail3.jpg"></td>
+				</tr>
+			</table>
+			<p id="center">(details)</p>
+		</div>
+		<div id="bottom"></div>
 
-	var artList = ["<table id='AP'><tr><td><img src='art/bears/bears1.jpeg'></td></tr><tr><td><img src='art/bears/bears2.jpeg'></td></tr><tr><td><img src='art/bears/bears3.jpeg'></td></tr><tr><td><img src='art/bears/bears4.jpeg'></td></tr></tr><tr><td><img src='art/bears/bears5.jpeg'></td></tr><tr><td><img src='art/bears/bears6.jpeg'></td></tr></table>",
-		"<img id='AO'src='art/sins.jpeg'>",
-		"<img id='AN'src='art/stars.jpeg'>",
-		"<table id='AM'><tr><td><img src='art/covid/covid1.jpeg'></td><td><img src='art/covid/covid2.jpeg'></td></tr></table>",
-		"<img id='AL'src='art/japanese_spirit.jpeg'>",
-		"<img id='AK'src='art/tt_heart.jpeg'>",
-		"<img id='AJ'src='art/fish.jpeg'>",
-		"<img id='AI'src='art/bughouse.jpeg'>",
-		"<img id='AH'src='art/bismarck.jpeg'>",
-		"<img id='AG'src='art/watering.jpeg'>",
-		"<table id='AF'><tr><td><img src='art/christmas/christmas1.jpeg'></td><td><img src='art/christmas/christmas2.jpeg'></td></tr></table><table><tr><td><img src='art/christmas/christmas3.jpeg'></td><td><img src='art/christmas/christmas4.jpeg'></td><td><img src='art/christmas/christmas5.jpeg'></td></tr></table>",
-		"<table id='AE'><tr><td><img src='art/dejavu/dejavu1.gif'></td><td><img src='art/dejavu/dejavu2.gif'></td><td><img src='art/dejavu/dejavu3.gif'></td></tr><tr><td><img src='art/dejavu/dejavu4.gif'></td><td><img src='art/dejavu/dejavu5.gif'></td><td><img src='art/dejavu/dejavu6.gif'></td></tr></table>",
-		"<table id='AD'><tr><td><img src='art/p_house/book1.jpeg'></td><td><img src='art/p_house/book2.jpeg'></td><td><img src='art/p_house/book3.jpeg'></td></tr></table><table><tr><td><img src='art/p_house/cover.jpeg'></td><td><img src='art/p_house/end1.jpeg'></td></tr><tr><td><img src='art/p_house/end2.jpeg'></td><td><img src='art/p_house/p1.jpeg'></td></tr><tr><td><img src='art/p_house/p2.jpeg'></td><td><img src='art/p_house/p3.jpeg'></td></tr><tr><td><img src='art/p_house/p4.jpeg'></td><td><img src='art/p_house/p5.jpeg'></td></tr><tr><td><img src='art/p_house/p6.jpeg'></td><td><img src='art/p_house/p7.jpeg'></td></tr><tr><td><img src='art/p_house/p8.jpeg'></td><td><img src='art/p_house/p9.jpeg'></td></tr><tr><td><img src='art/p_house/p10.jpeg'></td><td><img src='art/p_house/p11.jpeg'></td></tr><tr><td><img src='art/p_house/p12.jpeg'></td><td><img src='art/p_house/p13.jpeg'></td></tr></table>",
-		"<img id='AC'src='art/packed.jpeg'>",
-		"<table id='AB'><tr><td><img src='art/egg/egg1.jpeg'></td><td><img src='art/egg/egg2.jpeg'></td></tr></table><table><tr><td><img src='art/egg/egg7.jpeg'></td><td><img src='art/egg/egg5.jpeg'></td><td><img src='art/egg/egg6.jpeg'></td></tr></table><table><tr><td><img src='art/egg/egg3.jpeg'></td><td><img src='art/egg/egg4.jpeg'></td></tr></table>",
-		"<img id='AA'src='art/bike.jpeg'>"];
+		<div id="new york">
+			<p><br></p>
+			<h3 id="center">new york</h3>
+			<p id="center">2021<br>48"x36"</p>
+			<table><tr><td>
+						<img src="web_art/new_york_lowres.jpeg">
+					</td></tr></table>
+		</div>
+		<div id="bottom"></div>
 
-	var designList = ["<img id='BL' src='design/fruit/fruit3.gif'>",
-		"<table id='BK'><tr><td><img src='design/land/land1.jpeg'></td></tr><tr><td><img src='design/land/land2.jpeg'></td></tr></table>",
-		"<p id='BJ'><iframe width='100%' src='https://www.youtube.com/embed/_UriViQ01uI' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></p>",
-		"<table id='BI'>  <tr><td><img src='design/spray/spray1.jpeg'></td>  </tr><tr><td><img src='design/spray/spray2.jpeg'></td></tr></table>",
-		"<table id='BH'><tr><td><img src='design/shoe/shoe1.jpeg'></td><td><img src='design/shoe/shoe2.jpeg'></td></tr><tr><td><img src='design/shoe/shoe3.jpeg'></td><td><img src='design/shoe/shoe4.jpeg'></td></tr></table>",
-		"<table id='BG'><tr><td><img src='design/music/music1.jpeg'></td><td><img src='design/music/music2.jpeg'></td></tr><tr><td><img src='design/music/music3.jpeg'></td><td><img src='design/music/music4.jpeg'></td></tr></table>",
-		"<table id='BF'><tr><td><img src='design/bagel/bagel1.jpeg'></td><td><img src='design/bagel/bagel3.jpeg'></td></tr></table>",
-		"<table id='BE'><tr><td><img src='design/canopic/canopic2.jpeg'></td><td><img src='design/canopic/canopic3.jpeg'></td></tr></table>",
-		"<table id='BD'><tr><td><img src='design/fruit/fruit1.gif'></td><td><img src='design/fruit/fruit2.gif'></td></tr></table>",
-		"<table id='BC'><tr><td><img src='design/chair/chair2.jpeg'></td><td><img src='design/chair/chair3.jpeg'></td></tr></table><img src='design/chair/chair1.jpeg'><table><tr><td><img src='design/chair/chair4.jpeg'></td><td><img src='design/chair/chair5.jpeg'></td><td><img src='design/chair/chair6.jpeg'></td></tr></table>",
-		"<table id='BB'><tr><td><img src='design/compositions/comp1.jpeg'></td><td><img src='design/compositions/comp2.jpeg'></td><td><img src='design/compositions/comp3.jpeg'></td></tr><tr><td><img src='design/compositions/comp4.jpeg'></td><td><img src='design/compositions/comp5.jpeg'></td><td><img src='design/compositions/comp6.jpeg'></td></tr></table>",
-		"<table id='BA'><tr><td><img src='design/3dcompositions/3dc1.jpeg'></td><td><img src='design/3dcompositions/3dc2.jpeg'></td><td><img src='design/3dcompositions/3dc3.jpeg'></td></tr></table><table><tr><td><img src='design/3dcompositions/3dc4.jpeg'></td><td><img src='design/3dcompositions/3dc5.jpeg'></td></tr></table>"];
+		<div id="providence">
+			<p><br></p>
+			<h3 id="center">providence</h3>
+			<p id="center">2021<br>36"x24"</p>
+			<table><tr><td>
+						<img src="web_art/providence.jpeg">
+					</td></tr></table>
+		</div>
+		<div id="bottom"></div>
 
-	var sketchList = ["<img id='CO' src='sketches/s16.jpeg'>",
-		"<img id='CN' src='sketches/s1.jpeg'>",
-		"<img id='CM' src='sketches/s4.jpeg'>",
-		"<img id='CL' src='sketches/s3.jpeg'>",
-		"<img id='CK' src='sketches/s10.jpeg'>",
-		"<img id='CJ' src='sketches/s7.jpeg'>",
-		"<img id='CI' src='sketches/s8.jpeg'>",
-		"<img id='CH' src='sketches/s14.jpeg'>",
-		"<img id='CG' src='sketches/s11.jpeg'>",
-		"<img id='CF' src='sketches/s12.jpeg'>",
-		"<img id='CE' src='sketches/s13.jpeg'>",
-		"<img id='CD' src='sketches/s5.jpeg'>",
-		"<img id='CC' src='sketches/s6.jpeg'>",
-		"<img id='CB' src='sketches/s2.jpeg'>",
-		"<img id='CA' src='sketches/s15.jpeg'>"];
+		<div id="nee ner noo">
+			<p><br></p>
+			<h3 id="center">nee ner noo<br>(bear song)</h3>
+			<p id="center">2020<br>8"x4" each</p>
+			<table><tr><td>
+						<img src="web_art/nee7.jpeg">
+					</td></tr></table>
+			<table>
+				<tr>
+					<td><img src="web_art/nee1.jpeg"></td>
+					<td><img src="web_art/nee2.jpeg"></td>
+				</tr>
+				<tr>
+					<td><img src="web_art/nee3.jpeg"></td>
+					<td><img src="web_art/nee4.jpeg"></td>
+				</tr>
+				<tr>
+					<td><img src="web_art/nee5.jpeg"></td>
+					<td><img src="web_art/nee6.jpeg"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="bottom"></div>
 
-	window.onload = function() {
-		// loadArt();
-		loadThings("art");
-		loadThings("design");
-		loadThings("sketch");
-		getCaption(1, idKey1[0]);
-		getCaption(2, idKey2[0]);
-		getCaption(3, idKey3[0]);
-	}
+		<div id="legs">
+			<p><br></p>
+			<h3 id="center">legs</h3>
+			<p id="center">2021<br>8.5"x6"</p>
+			<table><tr><td>
+						<img src="web_art/relief.gif">
+					</td></tr></table>
+		</div>
+		<div id="bottom"></div>
 
-	function loadThings(type) {
-		var a = 0;
-		var sendto = "";
-		if (type=="art") {
-		  for (a = 0; a < artList.length; a++) {
-		    sendto += artList[a] + "<br><br>";
-		  }
-		  document.getElementById("artTarget").innerHTML = sendto;
-		} else if (type=="design") {
-			for (a = 0; a < designList.length; a++) {
-		    sendto += designList[a] + "<br><br>";
-		  }
-		  document.getElementById("designTarget").innerHTML = sendto;
-		} else if (type=="sketch") {
-			for (a = 0; a < sketchList.length; a++) {
-		    sendto += sketchList[a] + "<br><br>";
-		  }
-		  document.getElementById("sketchTarget").innerHTML = sendto;
-		}}
+		<div id="pair">
+			<p><br></p>
+			<h3 id="center">pair</h3>
+			<p id="center">2021<br>8"x6"</p>
+			<table><tr>
+				<td><img src="web_art/bear_pair1.jpeg"></td>
+				<td><img src="web_art/bear_pair2.jpeg"></td>
+					</tr></table>
+		</div>
+		<div id="bottom"></div>
 
-	var loc1 = 64 + artList.length;
-	var loc2 = 64 + designList.length;
-	var loc3 = 64 + sketchList.length;
+		<div id="inferno">
+			<p><br></p>
+			<h3 id="center">inferno</h3>
+			<p id="center">2020<br>3"x2" each</p>
+			<table><tr><td>
+						<img src="web_art/inferno.jpeg">
+					</td></tr></table>
+		</div>
+		<div id="bottom"></div>
 
-	function buttonUp(type) {
-		if (type==1) {
-			if (loc1 < 64 + artList.length) {
-				loc1++;
-			}
-			var locType = loc1;
-			var idType = "A";
-		} else if (type==2) {
-			if (loc2 < 64 + designList.length) {
-				loc2++;
-			}
-			var locType = loc2;
-			var idType = "B";
-		} else if (type==3) {
-			if (loc3 < 64 + sketchList.length) {
-				loc3++;
-			}
-			var locType = loc3;
-			var idType = "C";
-		}
-		var elmnt = document.getElementById(idType + String.fromCharCode(locType));
-	  elmnt.scrollIntoView(true);
-		getCaption(type, idType + String.fromCharCode(locType));
-		}
+		<div id="whale">
+			<p><br></p>
+			<h3 id="center">whale</h3>
+			<p id="center">2020<br>13"x17"</p>
+			<table><tr><td>
+						<img src="web_art/whale.jpeg">
+					</td></tr></table>
+		</div>
+		<div id="bottom"></div>
 
-	function buttonDown(type) {
-		if (type==1) {
-			if (loc1 > 65) {
-				loc1--;
-			}
-			var locType = loc1;
-			var idType = "A";
-		} else if (type==2) {
-			if (loc2 > 65) {
-				loc2--;
-			}
-			var locType = loc2;
-			var idType = "B";
-		} else if (type==3) {
-			if (loc3 > 65) {
-				loc3--;
-			}
-			var locType = loc3;
-			var idType = "C";
-		}
-		var elmnt = document.getElementById(idType + String.fromCharCode(locType));
-	  elmnt.scrollIntoView(true);
-		getCaption(type, idType + String.fromCharCode(locType));
-		}
 
-	var idKey1 = ["AP", "AO", "AN", "AM", "AL", "AK", "AJ", "AI", "AH", "AG", "AF", "AE", "AD", "AC", "AB", "AA"];
-	var capKey1 = ["&nbsp&nbspbears&nbsp&nbsp<br>ink<br>2020",
-	"&nbsp&nbspsins&nbsp&nbsp<br>ink + watercolor<br>2020",
-	"&nbsp&nbspstars&nbsp&nbsp<br>ink + gouache<br>2020",
-	"&nbsp&nbspposter&nbsp&nbsp<br>pencil + digital<br>2020",
-	"&nbsp&nbspjapanese spirit&nbsp&nbsp<br>ink + digital<br>2020",
-	"&nbsp&nbsptell-tale heart&nbsp&nbsp<br>ink + digital<br>2020",
-	"&nbsp&nbspfish&nbsp&nbsp<br>watercolor<br>2020",
-	"&nbsp&nbspbug house&nbsp&nbsp<br>pencil<br>2020",
-	"&nbsp&nbspbismarck&nbsp&nbsp<br>watercolor + digital<br>2020",
-	"&nbsp&nbspmouth watering&nbsp&nbsp<br>ink<br>2020",
-	"&nbsp&nbspadvent&nbsp&nbsp<br>embroidery<br>2019",
-	"&nbsp&nbspdeja vu&nbsp&nbsp<br>pencil + digital<br>2019",
-	"&nbsp&nbsppasta house&nbsp&nbsp<br>ink + watercolor<br>2019",
-	"&nbsp&nbsppacked&nbsp&nbsp<br>collage<br>2018",
-	"&nbsp&nbspeggs&nbsp&nbsp<br>ink + watercolor<br>2019",
-	"&nbsp&nbspfriend&nbsp&nbsp<br>ink<br>2018"];
+		<div id="about"></div>
+		<div id="bottom"></div>
+		<h3><div id="center">about</a></h3>
+		<p id="justify">Sophia is a visual artist and printmaker based in New York. Their images map the interaction between the natural and the built world, following imaginary mechanical systems from above to below the ground. They hold a BFA in Printmaking from the Rhode Island School of Design.</p>
+		<p  id="center"><br><a href="SophiaBrown_Resume.pdf" download>> download Sophia's resume here </a></p>
+		<p id="center"><br><br><Br><img id="me" src="me.jpg" alt="Image of Sophia"></p>
 
-	var idKey2 = ["BL", "BK", "BJ", "BI", "BH", "BG", "BF", "BE", "BD", "BC", "BB", "BA"];
-	var capKey2 = ["&nbsp&nbspfruit cup&nbsp&nbsp<br>ink + digital<br>2020",
-  "&nbsp&nbspspace cube&nbsp&nbsp<br>digital<br>2020",
-	"&nbsp&nbspjourney&nbsp&nbsp<br>digital<br>2018",
-	"&nbsp&nbspspray&nbsp&nbsp<br>digital<br>2020",
-	"&nbsp&nbspboots&nbsp&nbsp<br>digital<br>2020",
-	"&nbsp&nbspnotebook synth&nbsp&nbsp<br>digital<br>2020",
-	"&nbsp&nbspbagel box&nbsp&nbsp<br>digital<br>2020",
-	"&nbsp&nbspcanopic bubbles&nbsp&nbsp<br>digital<br>2020",
-	"&nbsp&nbspair&nbsp&nbsp<br>digital<br>2019",
-	"&nbsp&nbsptwo-person chair&nbsp&nbsp<br>wood + fabric<br>2018",
-	"&nbsp&nbspcompositions&nbsp&nbsp<br>collage<br>2017",
-	"&nbsp&nbspcompositions&nbsp&nbsp<br>plaster<br>2018"];
 
-	var idKey3 = ["CO", "CN", "CM", "CL", "CK", "CJ", "CI", "CH", "CG", "CF", "CE", "CD", "CC", "CB", "CA"];
-	var capKey3 = ["squirrels",
-	"corn dancer",
-	"anti-gravity",
-	"portrait",
-	"maddie",
-	"tree",
-	"beatles",
-	"chelsea",
-	"flight",
-	"thing",
-	"long cats",
-	"plant",
-	"tree",
-	"radiohead",
-	"phone"
-	];
+		<div id="bottom"></div>
+		<h3><div id="contact">contact</a></h3>
+		<p id="center"><br>email: sophiamaibrown@gmail.com<br>phone: (917) 566-7512</p>
+		<div id=bottom></div>
+		<p id="center">&copy Sophia Mai Brown 2021</p>
+		</div>
 
-	function getCaption(type, x) {
-		if (type==1) {
-			var getid = "caption1";
-			var key = idKey1;
-			var cap = capKey1;
-		} else if (type==2) {
-			var getid = "caption2";
-			var key = idKey2;
-			var cap = capKey2;
-		} else if (type==3) {
-			var getid = "caption3";
-			var key = idKey3;
-			var cap = capKey3;
-		}
-		document.getElementById(getid).innerHTML =
-		"<button style='font-size:1.5vw' onClick='makeModal(" + type + ',' + key.indexOf(x) + ")' id='btn" + x + "'>" +
-		cap[key.indexOf(x)] + "</button>";
-	}
+	<div id="bottom"></div>
 
-	var modal;
-	var btn;
 
-	function makeModal(type, x) {
-		if (type==1) {
-			var id = idKey1[x];
-			var list = artList[x];
-		} else if (type==2) {
-			var id = idKey2[x];
-			var list = designList[x];
-		} else if (type==3) {
-			var id = idKey3[x];
-			var list = sketchList[x];
-		}
-		var modal = document.getElementById("target");
-		var btn = document.getElementById('btn' + id);
-		var span = document.getElementsByClassName("close")[0];
-		document.getElementById("imgTarget").innerHTML = list;
-		modal.style.display = "block";
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}}}
-	</script>
 
-	<div id="target" class="modal">
-	  <div class='modal-content'>
-	    <span style="font-size:1.3vh" class='close'>&nbsp&nbsp&times;&nbsp&nbsp</span>
-			<br>
-	    <p id="imgTarget"></p>
-	  </div>
-	</div>
+
+
+
+ <script>
+ window.onscroll = function() {myFunction()};
+
+ var header = document.getElementById("myHeader");
+ var sticky = header.offsetTop;
+
+ function myFunction() {
+   if (window.pageYOffset >= sticky) {
+     header.classList.add("sticky");
+   } else {
+     header.classList.remove("sticky");
+   }
+ }
+ </script>
+
 
 </body>
 

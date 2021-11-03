@@ -1,6 +1,6 @@
 html, body{
   height: 90%;
-  width: 80%;
+  width: 85%;
   margin-left:auto;
   margin-right:auto;
 }
@@ -9,174 +9,101 @@ html, body, div {
   scroll-behavior: smooth;
 }
 
-body {
-  background-image: url('background.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  font-weight: bold;
 }
 
-table {
-  margin-left:auto;
-  margin-right:auto;
-  table-layout: fixed;
-  text-align:center;
-  width: 80%;
+.header {
+  padding: 10px 16px;
+  background: white;
+  color: black;
 
-}
-
-td {
-  width:33%;
-  height:50%;
-  padding:4px;
 }
 
 img {
+  height: 100%;
   width: 100%;
-  padding-top: 1vh;
+  object-fit: contain
 }
 
-button {
-  border:.2vw solid black;
-  border-radius: 1vw;
-  text-align: center;
-  text-decoration: none;
-  transition-duration: 0.3s;
-  outline:none;
-  background-color: white;
-  font-size:1.5vw;
+table {
+  table-layout: fixed ;
+  width: 100% ;
 }
 
-button:hover {
-  background-color: black;
-  color: white;
-}
-
-
-@font-face {
-  font-family: momcake;
-  src: url("momcake.otf");
-}
-
-* {
-  font-family: momcake;
-}
-
-.info {
-  /* padding-top: 2%; */
-  padding-right: 15%;
-  padding-left:0%;
-  /* padding-bottom: 1%; */
-  
-}
-
-
-
-
-
-.column {
-  float: left;
-  text-align:center;
-  overflow: hidden;
-  height:100%;
-  width: 30%;
-  border:.2vw solid black;
-  border-radius: 1vw;
-  background:white;
-}
-
-.separate {
-  float: left;
-  text-align:center;
-  overflow: hidden;
-  height:100%;
-  width: 2%;
-}
-
-
-.row {
-  height: 55%;
+/* Page content */
+.content {
+  padding: 16px;
+  width: 60%;
   margin-left:auto;
-  margin-right:auto;
-  table-layout: fixed;
-  text-align:center;
-  width: 80%;
+  text-align: right;
 }
 
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#about, #contact, #work{
+  text-align: center;
+}
+#justify {
+  text-align: justify;
+}
+#center {
+  text-align: center;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 3%;
+#bottom {
+  padding-bottom: 100px;
+}
 
-  left: 0;
+#me {
+  width:50%;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  padding: 30px;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: scroll; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  /* width: 100% */
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  max-width: 42%;
-  height: auto;
-  overflow: scroll;
-  border:.2vw solid black;
-  border-radius: 8px;
-  max-height: 80%;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 170px;
 }
 
 
-/* The Close Button */
-.close {
-  color: black;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  border:.2vw solid black;
-  border-radius: 8px;
-  transition-duration: 0.3s;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.close:hover,
-.close:focus {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 1.2vw;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
- border:.2vw solid black;
-  border-radius: 8px;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
   display: none;
-  margin: 50px;
+  /* position: absolute; */
+  min-width: 150px;
+  padding-left: 8%;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  /* left: 100%; top: 0; */
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 8px;
-  border:.2vw solid white;
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
 }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
